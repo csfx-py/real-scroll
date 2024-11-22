@@ -1,4 +1,5 @@
 import "./App.css";
+import { Collab } from "./views/Collab";
 import { Hero } from "./views/Hero";
 import { Navbar } from "./views/Navbar";
 import { Story } from "./views/Story";
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <Story />
+      <Collab />
       <div className="h-[200vh]"></div>
     </main>
   );
