@@ -1,5 +1,6 @@
 import "./App.css";
 import { Collab } from "./views/Collab";
+import { Diff } from "./views/Diff";
 import { Hero } from "./views/Hero";
 import { Navbar } from "./views/Navbar";
 import { Roadmap } from "./views/Roadmap";
@@ -13,7 +14,7 @@ function App() {
       <Story />
       <Collab />
       <Roadmap />
-      <div className="h-[200vh]"></div>
+      <Diff />
     </main>
   );
 }
