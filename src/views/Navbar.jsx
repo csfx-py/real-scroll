@@ -1,7 +1,7 @@
 import Logo from "../assets/realScrollLogo.jpeg";
 export const Navbar = () => {
   return (
-    <div className="bg-primary text-white py-4 px-[5%] flex justify-between items-center font-dmsans">
+    <div className="bg-primary text-white py-4 px-[10%] flex justify-between items-center font-dmsans">
       <div className="flex gap-2 items-center">
         <img
           src={Logo}

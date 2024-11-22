@@ -1,6 +1,6 @@
 export const Story = () => {
   return (
-    <div className="px-[5%] py-40 flex gap-8 bg-secondary">
+    <div className="px-[10%] py-40 flex gap-8 bg-secondary">
       <div className="w-1/3 bg-primary rounded-md">test</div>
       <div className="w-2/3 flex flex-col gap-4 py-4">
         <h3 className="text-6xl text-primary font-anton leading-snug uppercase">
