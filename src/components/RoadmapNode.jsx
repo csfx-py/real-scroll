@@ -1,6 +1,21 @@
-import PropTypes from "prop-types";
+import { useRef, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
-export const RoadmapNode = ({ variant, title, description, top, index }) => {
+export const RoadmapNode = ({
+  variant,
+  title,
+  description,
+  top,
+  index
+}) => {
+  const nodeRef = useRef(null);
+
+  useEffect(() => {
+    if (nodeRef.current) {
+      nodeRef.current.dataset.index = index;
+    }
+  }, [index]);
+
   const variants = [
     "text-primary",
     "text-secondary",
@@ -16,12 +31,11 @@ export const RoadmapNode = ({ variant, title, description, top, index }) => {
 
   return (
     <div
-      className="absolute pt-10 w-60 text-center"
+      ref={nodeRef}
+      className="absolute pt-10 w-60 text-center z-50"
       style={{
-        left: `${index % 2 !== 0 ? "10%" : "85%"}`,
-        transform: `translateX(${
-          index % 2 !== 0 ? "0" : "-100%"
-        }) translateY(-50%)`,
+        left: `${index % 2 !== 0 ? "0" : "800px"}`,
+        transform: `translateX(${index % 2 === 0 ? "-240px" : "0"})`,
         top: top,
       }}
     >
