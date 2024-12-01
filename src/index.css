@@ -23,6 +23,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -33,11 +38,10 @@ a {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-1942.065px);
+    transform: translateX(-50%);
   }
 }
 
 /* * {
   outline: 1px solid red;
 } */
-

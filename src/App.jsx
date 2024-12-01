@@ -19,7 +19,6 @@ function App() {
       <Roadmap />
       <Diff />
       <Stats />
-      <Vision />
       <Footer />
     </main>
   );
