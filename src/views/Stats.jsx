@@ -21,7 +21,7 @@ export const Stats = () => {
             <span className="text-2xl font-dmsans font-medium ">Community</span>
           </span>
           <span className="text-5xl font-anton text-center">
-            31%{" "}
+            what the rest is{" "}
             <span className="text-2xl font-dmsans font-medium ">Community</span>
           </span>
         </div>

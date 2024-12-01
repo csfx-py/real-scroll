@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "pnpm build",
-    "deploy": "gh-pages -d dist"
+    "gh-deploy": "pnpm build && gh-pages -d dist"
   },
   "dependencies": {
     "prop-types": "^15.8.1",

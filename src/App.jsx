@@ -7,7 +7,6 @@ import { Navbar } from "./views/Navbar";
 import { Roadmap } from "./views/Roadmap";
 import { Stats } from "./views/Stats";
 import { Story } from "./views/Story";
-import { Vision } from "./views/Vision";
 
 function App() {
   return (
