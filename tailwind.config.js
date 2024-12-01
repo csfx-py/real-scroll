@@ -13,6 +13,7 @@ export default {
         "pink-accent": "#ff66b7",
         "green-accent": "#29ccb9",
         "blue-accent": "#0091ff",
+        "brown-accent": "#B8926D",
       },
     },
   },
