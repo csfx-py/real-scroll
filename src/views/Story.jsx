@@ -1,7 +1,15 @@
+import StoryImage from "../assets/scroll2.png";
+
 export const Story = () => {
   return (
-    <div className="px-[10%] py-40 flex gap-8 bg-secondary">
-      <div className="w-1/3 bg-primary rounded-md">test</div>
+    <div className="px-[10%] py-40 flex gap-8 bg-brown-accent">
+      <div className="w-1/3 rounded-md">
+        <img
+          src={StoryImage}
+          alt="TP Roll"
+          className="rounded-md object-cover"
+        />
+      </div>
       <div className="w-2/3 flex flex-col gap-4 py-4">
         <h3 className="text-6xl text-primary font-anton leading-snug uppercase">
           “Once Upon a Time... <br />
@@ -20,11 +28,14 @@ export const Story = () => {
           rewarding, and hilarious airdrops. TP became a legend, proving that
           even a humble roll can leave its mark on the crypto world.
         </p>
-        <button className="bg-blue-accent ml-8 w-fit py-4 px-8 rounded-md font-dmsans text-primary text-lg"
+        <button
+          className="bg-blue-accent ml-8 w-fit py-4 px-8 rounded-md font-anton text-white text-lg"
           style={{
             boxShadow: "4px -4px 0 rgba(31, 35, 38, 0.8)",
           }}
-        >Read More</button>
+        >
+          X (Twitter)
+        </button>
       </div>
     </div>
   );

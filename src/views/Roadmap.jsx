@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { RoadmapNode } from "../components/RoadmapNode";
 import { useMemo } from "react";
+import ScrollEye from "../assets/scrollLookingOpen.png";
 
 export const Roadmap = () => {
   const [paths, setPaths] = useState([]);
@@ -67,9 +68,17 @@ export const Roadmap = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full">
-      <h3 className="text-secondary text-7xl font-anton uppercase mb-20">
-        Roadmap
-      </h3>
+      <div className="text-secondary text-7xl font-anton uppercase mb-20 flex gap-4">
+        <img src={ScrollEye} alt="Scroll Eye" className="w-20 h-20" />
+        <h3 className="bg-gradient-to-r from-green-accent via-blue-500 to-pink-accent bg-clip-text text-transparent">
+          Roadmap
+        </h3>
+        <img
+          src={ScrollEye}
+          alt="Scroll Eye"
+          className="w-20 h-20 transform scale-x-[-1]"
+        />
+      </div>
       <div ref={roadmapRef} className="relative w-[800px] min-h-screen">
         {nodes.map((node, index) => (
           <RoadmapNode

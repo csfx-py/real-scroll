@@ -1,8 +1,20 @@
+import Heaven from "../assets/scrollHeaven.jpeg";
+
 export const Footer = () => {
   return (
-    <div className="mt-10">
-      <div className="bg-gradient-to-r from-green-accent/50 via-blue-accent/50 to-pink-accent/50 py-40 flex justify-center items-center">
-        <span className="text-primary font-dmsans text-lg font-semibold text-center w-[50%]">
+    <div className="flex flex-col text-white">
+      <div
+        className="flex flex-col justify-between pb-10"
+        style={{
+          backgroundImage: `url(${Heaven})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          height: "105vh",
+        }}
+      >
+        <div className="flex flex-col bg-gradient-to-b from-blue-accent via-blue-accent/60 to-transparent h-14 text-white"></div>
+        <span className="text-2xl font-semibold font-dmsans text-center px-[30%]">
           Forget the hype, see how REALscroll plays it smart. From real
           timelines to no-BS milestones, we&apos;re the anti-fail blueprint.
         </span>

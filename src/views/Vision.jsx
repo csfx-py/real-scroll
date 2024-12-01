@@ -2,13 +2,15 @@ import { Marquee } from "../components/Marquee";
 
 export const Vision = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full gap-14 bg-secondary">
+    <div className="flex flex-col items-center justify-center w-full gap-14 bg-blue-accent">
       <div
-        className="flex p-20 w-full"
+        className="flex py-20 w-full"
         style={{
-          background: "linear-gradient(175deg, #1f2326 49%, #b1b1b1 50%)",
+          background: "linear-gradient(175deg, #1f2326 49%, #0091ff 50%)",
         }}
-      ></div>
+      >
+        <Marquee />
+      </div>
       <h3 className="text-primary text-7xl font-anton uppercase mt-20 text-center w-[50%] px-[9%]">
         LEt&apos;s get you from the WC, to the moon
       </h3>
